@@ -1,0 +1,228 @@
+:root {
+    --hola: ;
+}
+
+.titulo_uno {
+    min-width: 100%;
+    /*border: 1px solid rgb(200, 14, 14);*/
+    text-align: center;
+    margin: 15px;
+    
+}
+
+@media screen and (max-width : 450px){
+    .contenedor-inputs {
+        padding: 20px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    input {
+        margin-bottom: 15px;
+    }
+
+    .label_escuela_profesional, .input_Escuela_Profesional{
+        width: 100%;
+       /*border: 1px solid rosybrown;*/
+    }
+    .label_Dni, .label_NHC{
+        width: 48%;
+        /*border: 1px solid rgb(223, 15, 15);*/   
+    }
+    .input_Dni , .input_NHC{
+        width: 100%;
+    }
+    .label_Apellidos_y_Nombres, .input_Apellidos_y_Nombres{
+        width: 100%;
+    }
+    .label_Edad, .label_Sexo{
+        width: 48%;
+        /*border: 1px solid rgb(223, 15, 15);*/   
+    }
+    .input_Edad , .input_Sexo{
+        width: 100%;
+    }
+
+    .label_Domicilio, .input_Domicilio{
+        width: 100%;
+    }
+    .label_Procedencia, .input_Procedencia{
+        width: 100%;
+    }
+    .label_Lugar_de_Nacimiento, .input_Lugar_de_Nacimiento{
+        width: 100%;
+    }
+    .label_Telefono, .label_Telefono_de_Familiar{
+        width: 48%;
+        /*border: 1px solid rgb(223, 15, 15);*/   
+    }
+    .input_Telefono , .input_Telefono_de_Familiar{
+        width: 100%;
+    }
+    .label_Religion, .input_Religion{
+        width: 100%;
+    }
+
+}
+
+
+   
+
+
+
+@media screen and (min-width : 451px){
+    body {
+        background-color: #204862;
+    }
+    .contenedor-inputs {
+        width: 95%;
+        max-width: 1200px;
+        border: 1px solid black;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+    input {
+        margin-bottom: 15px;
+    }
+
+    .label_escuela_profesional {
+        width: 60%; 
+        border: var(--hola);
+    }
+
+    .input_Escuela_Profesional{
+        width: 74%; 
+        
+    }
+
+    .label_Dni   {
+        width: 15%;
+        border: var(--hola);
+    }
+
+    .input_Dni {
+        width: 70%;
+    }
+
+    .label_NHC  {
+        width: 15%;
+        border: var(--hola);
+
+    }
+    .input_NHC {
+        width: 68%;
+    }
+    .label_Apellidos_y_Nombres{
+        width: 70%;
+        border: var(--hola);
+    }
+    .input_Apellidos_y_Nombres {
+        width: 77%;
+    }
+    .label_Edad{
+        width: 10%;
+        border: var(--hola);
+    }
+    .input_Edad {
+        width: 40%;
+    }
+    .label_Sexo{
+        width: 10%;
+        border: var(--hola);
+    }
+    .input_Sexo {
+        width: 40%;
+    }
+    .label_Domicilio{
+        width: 70%;
+        border: var(--hola);
+    }
+    .input_Domicilio {
+        width: 88%;
+    }
+    .label_Procedencia{
+        width: 25%;
+        border: var(--hola);
+    }
+    .input_Procedencia{
+        width: 60%;
+    }
+
+    .label_Lugar_de_Nacimiento{
+        width: 70%;
+        border: var(--hola);
+    }
+    .input_Lugar_de_Nacimiento {
+        width: 77%;
+    }
+    .label_Telefono{
+        width: 25%;
+        border: var(--hola);
+    }
+    .input_Telefono{
+        width: 60%;
+    }
+
+    .label_Telefono_de_Familiar{
+        width: 40%;
+        border: var(--hola);
+    }
+    .Telefono_de_Familiar{
+        width: 60%;
+    }
+
+    .label_Religion{
+        width: 40%;
+        border: var(--hola);
+    }
+    .input_Religion{
+        width: 60%;
+    }
+    .button {
+        width: 100%;
+        margin-top: 19px;
+    }
+    
+    
+    .contenedor_inputs_choices {
+        /*border: 1px solid black;*/
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+    .caja_div {
+        border: 1px solid black;
+        width: 300px;
+        margin-bottom: 14px;
+        margin: 30px;
+    }
+    
+    .caja_div div {
+        margin: auto;
+        display: flex;
+    }
+    
+    .titulo_choices {
+        text-align: center;
+        font-size: 20px;
+    }
+    .caja_div_especifique {
+        border: 1px solid black;
+        width: 50%;
+        margin: auto;
+    }
+    .input_Especifique input{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+

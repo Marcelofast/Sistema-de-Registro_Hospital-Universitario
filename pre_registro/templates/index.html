@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{% static 'estilospreinscripcion.css' %}" >
+    <title >Document</title>
+</head>
+<body>
+    <form class="form-register" method="POST">
+        {% csrf_token %}
+        <div class="contenedor-inputs">
+            <h2 class="titulo_uno">HISTORIA CLINICA DE ATENCION INTEGRAL DEL ESTUDIANTES</h2>
+
+            <div class="label_escuela_profesional">
+                <label class="form-label124">
+                    {{ form.Escuela_Profesional.label }}
+                </label>
+                {{ form.Escuela_Profesional }} 
+            </div>
+    
+            <div class="label_Dni">
+                <label class="form-label">
+                    {{ form.Dni.label }}
+                </label>
+                {{ form.Dni }}  
+            </div> 
+              
+            <div class="label_NHC">
+                <label class="form-label">
+                    {{ form.NHC.label }}
+                </label>
+                {{  form.NHC }} 
+            </div>
+    
+            <h2 class="titulo_uno">DATOS GENERALES</h2>
+    
+            <div class="label_Apellidos_y_Nombres">
+                <label class="form-label">
+                    {{ form.Apellidos_y_Nombres.label }}
+                </label>
+                {{ form.Apellidos_y_Nombres }}
+            </div>
+    
+            <div class="label_Edad">
+                <label class="form-label">
+                    {{ form.Edad.label }}
+                </label>
+                {{ form.Edad }}
+            </div>
+    
+            <div class="label_Sexo">
+                <label class="form-label">
+                    {{ form.Sexo.label }}
+                </label>
+                {{ form.Sexo }}
+            </div>
+    
+            <div class="label_Domicilio">
+                <label class="form-label">
+                    {{form.Domicilio.label}}
+                </label>
+                {{ form.Domicilio }}
+            </div>
+    
+            <div class="label_Procedencia">
+                <label class="form-label">
+                    {{form.Procedencia.label}}
+                </label>
+                {{ form.Procedencia }}
+            </div>
+    
+            <div class="label_Lugar_de_Nacimiento">
+                <label class="form-label">
+                    {{form.Lugar_de_Nacimiento.label}}
+                </label>
+                {{ form.Lugar_de_Nacimiento }}
+            </div>
+    
+            <div class="label_Telefono">
+                <label class="form-label">
+                    {{form.Telefono.label}}
+                </label>
+                {{ form.Telefono }}
+            </div>
+    
+            <div class="label_Telefono_de_Familiar">
+                <label class="form-label">
+                    {{form.Telefono_de_Familiar.label}}
+                </label>
+                {{ form.Telefono_de_Familiar }}
+            </div>
+    
+            <div class="label_Religion">
+                <label class="form-label">
+                    {{form.Religion.label}}
+                </label>
+                {{ form.Religion }}
+            </div>
+            <h2 class="titulo_uno">ANTECEDENTES PERSONALES</h2>
+
+            <div class="contenedor_inputs_choices">
+                <div class="caja_div">
+                    <h1 class="titulo_choices">ALERGIA DE MEDICAMENTOS</h1>
+                    {{ form.Alergia_a_Medicamentos }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">HABITOS NOCIVOS ¿FUMA?</h1>
+                    {{ form.Habitos_Nocivos_Fuma }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">HABITOS NOCIVOS ¿TOMA LICOR?</h1>
+                    {{ form.Habitos_Nocivos_Toma_Licor }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">TRANSFUCIONES SANGUIENAS</h1>
+                    {{ form.Transfuciones_Sanguineas }}       
+                </div>
+
+                <div class="caja_div">
+                    <h1 class="titulo_choices">ENFERMEDADES INFECTOCONTAGIOSAS</h1>
+                    {{ form.Enfermedades_Infectocontagiosas }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">VACUNAS COMPLETAS</h1>
+                    {{ form.Vacunas_Completas }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">ENFERMEDADES CRÓNICAS</h1>
+                    {{ form.Enfermedades_Cronicas }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">DISCAPACIDAD</h1>
+                    {{ form.Discapacidad }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">ACCIDENTES</h1>
+                    {{ form.Accidentes }}       
+                </div>
+    
+                <div class="caja_div">
+                    <h1 class="titulo_choices">INTOXICACIONES</h1>
+                    {{ form.Intoxicaciones }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">CIRUGÍA HOSPITALIZACIÓN</h1>
+                    {{ form.Cirugia_Hospitalizacion }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">USO DE MEDICAMENTOS</h1>
+                    {{ form.Uso_de_Medicamentos }}       
+                </div>
+                <div class="caja_div">
+                    <h1 class="titulo_choices">PROBLEMAS PSCOLÓGICOS</h1>
+                    {{ form.Problemas_Psicologicos }}       
+                </div>
+                <div class="caja_div_especifique">
+                    <h1 class="titulo_choices">¿USTED PADECE ALGUNA ENFERMEDAD, ESTADO O PROBLEMA QUE NO FIGURA AQUI, Y QUE DEBERÍAMOS CONOCER?</h1>
+                    {{ form.Especifique }}       
+                </div>
+            </div>
+
+
+    
+            <div class="button">
+                <input type="submit" value="Enviar" class="btn btn-primary">
+            </div>
+
+        </div>
+
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
