@@ -49,7 +49,7 @@ class listando_mis_forms(forms.Form):
     Problemas_Psicologicos = forms.ChoiceField(widget=forms.RadioSelect, choices=CHOICES)
 
     Especifique = forms.CharField(label='Especifique :', widget=forms.TextInput(attrs={'class': 'input_Especifique'}))
-
+Especifique = forms.CharField(label='Especifique :', widget=forms.TextInput(attrs={'class': 'input_Especifique'}))
 
 
 
